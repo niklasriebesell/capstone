@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import NFL from '../Assets/NFL.png'
-import NBA from '../Assets/NBA.png'
 import MLB from '../Assets/MLB.png'
+import NBA from '../Assets/NBA.png'
 
 function Headertop() {
   return (
@@ -28,9 +28,9 @@ function Headertop() {
 
 const Header = styled.header`
   background-color: #da2127;
-  flex-direction: row;
   border-radius: 50;
   margin: 0px;
+  position: top;
 `
 
 const H1 = styled.h1`
@@ -38,8 +38,9 @@ const H1 = styled.h1`
   position: center;
 `
 const Ul = styled.ul`
-  list-style-type: none;
+  display: flex;
   justify-content: space-between;
+  list-style-type: none;
 `
 
 export default Headertop

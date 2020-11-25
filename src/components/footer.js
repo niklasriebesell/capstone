@@ -10,6 +10,8 @@ function Footerdown() {
 }
 
 const Footer = styled.footer`
+  display: flex;
+  display: bottom;
   background-color: #da2127;
   flex-direction: row;
   border-radius: 50;
