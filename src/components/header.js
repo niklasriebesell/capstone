@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import NFL from '../Assets/NFL.png'
 import MLB from '../Assets/MLB.png'
 import NBA from '../Assets/NBA.png'

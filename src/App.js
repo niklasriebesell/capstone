@@ -1,5 +1,5 @@
 /** @format */
-import GlobalStyle from './styles/globalstyle'
+//import GlobalStyle from './styles/globalstyle'
 import Headertop from './Components/header'
 import Footerdown from './Components/footer'
 
