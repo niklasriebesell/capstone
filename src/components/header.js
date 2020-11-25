@@ -2,12 +2,14 @@ import styled from 'styled-components'
 import NFL from '../Assets/NFL.png'
 import MLB from '../Assets/MLB.png'
 import NBA from '../Assets/NBA.png'
+import Brightness4Icon from '@material-ui/icons/Brightness4'
+//import Brightness7Icon from '@material-ui/icons/Brightness7'
 
 function Headertop() {
   return (
     <Header>
       <H1>Injury-Report</H1>
-      <button>Darkmode</button>
+      <button src={Brightness4Icon} width="50" alt="Darkmode-Icon"></button>
       <Ul>
         <li>
           <img src={NFL} width="50" alt="NFL-Icon" />

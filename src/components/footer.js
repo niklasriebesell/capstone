@@ -1,10 +1,16 @@
 import styled from 'styled-components'
+import BackspaceIcon from '@material-ui/icons/Backspace'
+import HomeIcon from '@material-ui/icons/Home'
 
 function Footerdown() {
   return (
     <Footer>
-      <button>Back</button>
-      <button>Home</button>
+      <button src={BackspaceIcon} width="50" alt="Back-Icon">
+        Back
+      </button>
+      <button src={HomeIcon} width="50" alt="Home-Icon">
+        Home
+      </button>
     </Footer>
   )
 }
