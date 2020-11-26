@@ -1,13 +1,15 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import NFL from '../Assets/NFL.png'
 import MLB from '../Assets/MLB.png'
 import NBA from '../Assets/NBA.png'
+import Brightness4Icon from '@material-ui/icons/Brightness4'
+//import Brightness7Icon from '@material-ui/icons/Brightness7'
 
 function Headertop() {
   return (
     <Header>
       <h1>Injury-Report</h1>
-      <button>Darkmode</button>
+      <button src={Brightness4Icon} width="50" alt="Darkmode-Icon"></button>
       <Ul>
         <li>
           <img src={NFL} width="50" alt="NFL-Icon" />
@@ -28,12 +30,19 @@ function Headertop() {
 
 const Header = styled.header`
   background-color: #da2127;
-  border-radius: 50;
+  position: relative;
+  max-width: auto;
   margin: 0px;
+
   position: top;
+  padding: 1em;
+  border-radius: 25px;
+  height: 5em;
   h1 {
     color: #ffffff;
     position: center;
+    margin-top: 0;
+    margin-bottom: 2px;
   }
 `
 
