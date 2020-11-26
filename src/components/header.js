@@ -1,28 +1,51 @@
-import styled from 'styled-components'
+import styled from 'styled-components/macro'
 import NFL from '../Assets/NFL.png'
-import NBA from '../Assets/NBA.png'
 import MLB from '../Assets/MLB.png'
+import NBA from '../Assets/NBA.png'
+import Brightness4Icon from '@material-ui/icons/Brightness4'
+//import Brightness7Icon from '@material-ui/icons/Brightness7'
 
-function Header() {
+function Headertop() {
   return (
-    <header>
-      <h1>Injury-Report</h1>
-      <ul>
+    <Header>
+      <H1>Injury-Report</H1>
+      <button src={Brightness4Icon} width="50" alt="Darkmode-Icon"></button>
+      <Ul>
         <li>
           <img src={NFL} width="50" alt="NFL-Icon" />
           NFL
         </li>
         <li>
-          <img src={MLB} width="50" alt="MLB-Icon" />
+          <img src={MLB} width="60" alt="MLB-Icon" />
           MLB
         </li>
         <li>
-          <img src={NBA} width="50" alt="NBA-Icon" />
+          <img src={NBA} width="30" alt="NBA-Icon" />
           NBA
         </li>
-      </ul>
-    </header>
+      </Ul>
+    </Header>
   )
 }
 
-export default Header
+const Header = styled.header`
+  background-color: #da2127;
+  border-radius: 50;
+  position: relative;
+  max-width: auto;
+  margin: 0px;
+  padding: 1em;
+`
+
+const H1 = styled.h1`
+  color: #ffffff;
+  position: center;
+  margin-top: 0;
+`
+const Ul = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+`
+
+export default Headertop

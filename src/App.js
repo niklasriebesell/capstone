@@ -1,13 +1,14 @@
 /** @format */
 import GlobalStyle from './styles/globalstyle'
-import Header from './Components/header'
-import Footer from './Components/footer'
+import Headertop from './Components/header'
+import Footerdown from './Components/footer'
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Footer />
+      <GlobalStyle />
+      <Headertop />
+      <Footerdown />
     </div>
   )
 }
