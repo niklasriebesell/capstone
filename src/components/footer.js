@@ -18,11 +18,13 @@ function Footerdown() {
 
 const Footer = styled.footer`
   display: flex;
-  display: bottom;
+  position: fixed;
+  bottom: 1px;
   background-color: #da2127;
   flex-direction: row;
   border-radius: 50;
   justify-content: space-between;
+  width: 100%;
 `
 
 export default Footerdown

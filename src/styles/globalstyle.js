@@ -9,6 +9,5 @@ export default createGlobalStyle`
     font-size: 112.5%;
     font-family: sans-serif;
     background-color: #003A73;
-    
   }
   `

@@ -31,13 +31,16 @@ function Headertop() {
 const Header = styled.header`
   background-color: #da2127;
   border-radius: 50;
+  position: relative;
+  max-width: auto;
   margin: 0px;
-  position: top;
+  padding: 1em;
 `
 
 const H1 = styled.h1`
   color: #ffffff;
   position: center;
+  margin-top: 0;
 `
 const Ul = styled.ul`
   display: flex;
