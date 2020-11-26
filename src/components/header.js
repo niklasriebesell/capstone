@@ -6,7 +6,7 @@ import NBA from '../Assets/NBA.png'
 function Headertop() {
   return (
     <Header>
-      <H1>Injury-Report</H1>
+      <h1>Injury-Report</h1>
       <button>Darkmode</button>
       <Ul>
         <li>
@@ -31,12 +31,12 @@ const Header = styled.header`
   border-radius: 50;
   margin: 0px;
   position: top;
+  h1 {
+    color: #ffffff;
+    position: center;
+  }
 `
 
-const H1 = styled.h1`
-  color: #ffffff;
-  position: center;
-`
 const Ul = styled.ul`
   display: flex;
   justify-content: space-between;
