@@ -10,6 +10,10 @@ function Headertop() {
     <Header>
       <h1>Injury-Report</h1>
       <button src={Brightness4Icon} width="50" alt="Darkmode-Icon"></button>
+      <button src={NFL} width="50" alt="NFL-Icon"></button>
+      <button src={MLB} width="50" alt="MLB-Icon"></button>
+      <button src={NBA} width="50" alt="NBA-Icon"></button>
+
       <Ul>
         <li>
           <img src={NFL} width="50" alt="NFL-Icon" />
