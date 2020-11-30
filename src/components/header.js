@@ -35,7 +35,8 @@ const Header = styled.header`
   background-color: #da2127;
   position: relative;
   max-width: auto;
-  margin: 0px;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
 
   position: top;
   padding: 1em;
