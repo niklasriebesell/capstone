@@ -21,19 +21,25 @@ const Footer = styled.footer`
   position: fixed;
   bottom: 1px;
   background-color: #da2127;
-  flex-direction: row;
   border-radius: 10px;
   justify-content: space-between;
   width: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 0.5em 1em;
   max-width: 100%;
 `
 
 const Button = styled.button`
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0.7em;
   color: #ffffff;
   background-color: #041e42;
   border-radius: 50px;
-  border: 0;
+  border: none;
+  font-size: 1.25em;
+  line-height: 1.5;
+  svg {
+    margin-right: 0.4em;
+  }
 `
 export default Footerdown
