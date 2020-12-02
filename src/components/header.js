@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro'
-import NFL from '../Assets/NFL.png'
-import MLB from '../Assets/MLB.png'
-import NBA from '../Assets/NBA.png'
+import NFL from '../Assets/NFL.webp'
+import MLB from '../Assets/MLB.webp'
+import NBA from '../Assets/NBA.webp'
 //import Brightness4Icon from '@material-ui/icons/Brightness4'
 //import Brightness7Icon from '@material-ui/icons/Brightness7'
 

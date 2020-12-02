@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+/*import styled from 'styled-components/macro'
 import getNflInjuryData from '../../Api/fetchDataNfl'
 
 export default function injuredPlayerCard({ player }) {
@@ -18,3 +18,4 @@ export default function injuredPlayerCard({ player }) {
     </>
   )
 }
+*/
