@@ -1,42 +1,44 @@
 import GlobalStyle from './styles/globalstyle'
 import Headertop from './Components/header'
 import Footerdown from './Components/footer'
-import SanFran from '../Components/49ers.webp'
-import ArizonaCardinels from '../Components/Arizona-Cardinals.webp'
-import atlantafalcons from '../Components/atlanta-falcons.webp'
-import baltimoreravens from '../Components/baltimore-ravens.webp'
-import buffalobills from '../Components/buffalo-bills.webp'
-import carolinapanthers from '../Components/carolina-panthers.webp'
-import chicagobears from '../Components/chicago-bears.webp'
-import cincinnatibengals from '../Components/cincinnati-bengals.webp'
-import clevelandbrowns from '../Components/cleveland-browns.webp'
-import dallascowboys from '../Components/dallas-cowboys.webp'
-import denverbroncos from '../Components/denver-broncos.webp'
-import detroitlions from '../Components/detroit-lions.webp'
-import greenbaypackers from '../Components/green-bay-packers.webp'
-import houstontexans from '../Components/houston-texans.webp'
-import indianapoliscolts from '../Components/indianapolis-colts.webp'
-import jacksonvillejaguars from '../Components/jacksonville-jaguars.webp'
-import kansascitychiefs from '../Components/kansas-city-chiefs.webp'
-import miamidolphins from '../Components/miami-dolphins.webp'
-import minnesotavikings from '../Components/minnesota-vikings.webp'
-import newenglandpatriots from '../Components/new-england-patriots.webp'
-import neworleanssaints from '../Components/new-orleans-saints.webp'
-import newyorkgiants from '../Components/new-york-giants.webp'
-import newyorkjets from '../Components/new-york-jets.webp'
-import oaklandraiders from '../Components/oakland-raiders.webp'
-import philadelphiaeagles from '../Components/philadelphia-eagles.webp'
-import pittsburghsteelers from '../Components/pittsburgh-steelers.webp'
-import sandieagochargers from '../Components/san-dieago-chargers.webp'
-import seattleseahawks from '../Components/seattle-seahawks.webp'
-import stlouisrams from '../Components/st-louis-rams.webp'
-import tampabaybuccaneers from '../Components/tampa-bay-buccaneers.webp'
-import tennesseetitans from '../Components/tennessee-titans.webp'
-import washingtonredskins from '../Components/washington-redskins.webp'
+import sanfran from '../Components/sanfran.webp'
+import arizonacardinels from '../Components/arizonacardinals.webp'
+import atlantafalcons from '../Components/atlantafalcons.webp'
+import baltimoreravens from '../Components/baltimoreravens.webp'
+import buffalobills from '../Components/buffalobills.webp'
+import carolinapanthers from '../Components/carolinapanthers.webp'
+import chicagobears from '../Components/chicagobears.webp'
+import cincinnatibengals from '../Components/cincinnatibengals.webp'
+import clevelandbrowns from '../Components/clevelandbrowns.webp'
+import dallascowboys from '../Components/dallascowboys.webp'
+import denverbroncos from '../Components/denverbroncos.webp'
+import detroitlions from '../Components/detroitlions.webp'
+import greenbaypackers from '../Components/greenbaypackers.webp'
+import houstontexans from '../Components/houstontexans.webp'
+import indianapoliscolts from '../Components/indianapoliscolts.webp'
+import jacksonvillejaguars from '../Components/jacksonvillejaguars.webp'
+import kansascitychiefs from '../Components/kansascitychiefs.webp'
+import miamidolphins from '../Components/miamidolphins.webp'
+import minnesotavikings from '../Components/minnesotavikings.webp'
+import newenglandpatriots from '../Components/newenglandpatriots.webp'
+import neworleanssaints from '../Components/neworleanssaints.webp'
+import newyorkgiants from '../Components/newyorkgiants.webp'
+import newyorkjets from '../Components/newyorkjets.webp'
+import oaklandraiders from '../Components/oaklandraiders.webp'
+import philadelphiaeagles from '../Components/philadelphiaeagles.webp'
+import pittsburghsteelers from '../Components/pittsburghsteelers.webp'
+import sandieagochargers from '../Components/sandieagochargers.webp'
+import seattleseahawks from '../Components/seattleseahawks.webp'
+import stlouisrams from '../Components/stlouisrams.webp'
+import tampabaybuccaneers from '../Components/tampabaybuccaneers.webp'
+import tennesseetitans from '../Components/tennesseetitans.webp'
+import washingtonredskins from '../Components/washingtonredskins'
 
 export default function chooseNflTeam() {
   return (
     <>
+      <Headertop />
+
       <h2>Choose your Team</h2>
 
       <div>
@@ -169,19 +171,20 @@ export default function chooseNflTeam() {
         <h3>NFC West</h3>
         <ul>
           <li>
-            <img src={ArizonaCardinels} width="50" alt="NFL-Icon" />
+            <img src={arizonacardinels} width="50" alt="NFL-Icon" />
           </li>
           <li>
             <img src={stlouisrams} width="50" alt="NFL-Icon" />
           </li>
           <li>
-            <img src={SanFran} width="50" alt="NFL-Icon" />
+            <img src={sanfran} width="50" alt="NFL-Icon" />
           </li>
           <li>
             <img src={seattleseahawks} width="50" alt="NFL-Icon" />
           </li>
         </ul>
       </div>
+      <Footerdown />
     </>
   )
 }
