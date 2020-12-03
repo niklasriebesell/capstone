@@ -1,6 +1,6 @@
 //import GlobalStyle from './styles/globalstylemacro'
-import Headertop from '../Components/header'
-import Footerdown from '../Components/footer'
+import Headertop from './header'
+import Footerdown from './footer'
 import Sanfran from '../Assets/sanfran.webp'
 import Arizonacardinals from '../Assets/arizonacardinals.webp'
 import Atlantafalcons from '../Assets/atlantafalcons.webp'
@@ -45,36 +45,20 @@ export default function NimmNflTeam() {
         <h3>AFC East</h3>
         <ul>
           <li>
-            <img
-              src={Buffalobills}
-              webp={Buffalobills}
-              width="50"
-              alt="buffalobiils-Icon"
-            />
+            <img src={Buffalobills} width="50" alt="buffalobiils-Icon" />
           </li>
           <li>
-            <img
-              src={Miamidolphins}
-              webp={Miamidolphins}
-              width="50"
-              alt="miamidolphins-Icon"
-            />
+            <img src={Miamidolphins} width="50" alt="miamidolphins-Icon" />
           </li>
           <li>
             <img
               src={Newenglandpatriots}
-              webp={Newenglandpatriots}
               width="50"
               alt="newenglandpatriots-Icon"
             />
           </li>
           <li>
-            <img
-              src={Newyorkjets}
-              webp={Newyorkjets}
-              width="50"
-              alt="newyorkjets-Icon"
-            />
+            <img src={Newyorkjets} width="50" alt="newyorkjets-Icon" />
           </li>
         </ul>
       </div>
