@@ -1,4 +1,5 @@
-//import GlobalStyle from './styles/globalstylemacro'
+import GlobalStyle from '../styles/globalstyle'
+import styled from 'styled-components/macro'
 import Headertop from './header'
 import Footerdown from './footer'
 import Sanfran from '../Assets/sanfran.webp'
@@ -37,11 +38,12 @@ import Seattleseahawks from '../Assets/seattleseahawks.webp'
 export default function NimmNflTeam() {
   return (
     <>
+      <GlobalStyle />
       <Headertop />
 
       <h2>Choose your Team</h2>
 
-      <div>
+      <DivisonAFCEast>
         <h3>AFC East</h3>
         <ul>
           <li>
@@ -61,7 +63,7 @@ export default function NimmNflTeam() {
             <img src={Newyorkjets} width="50" alt="newyorkjets-Icon" />
           </li>
         </ul>
-      </div>
+      </DivisonAFCEast>
 
       <div>
         <h3>AFC North</h3>
@@ -245,3 +247,7 @@ export default function NimmNflTeam() {
     </>
   )
 }
+
+const DivisonAFCEast = styled.div`
+  display: flex;
+`

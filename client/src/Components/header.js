@@ -35,37 +35,37 @@ function Headertop() {
 }
 
 const Header = styled.header`
+  background-color: #da2127;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
-  background-color: #da2127;
-  position: relative;
-  max-width: auto;
+  height: 8em;
   margin-left: 0.2em;
   margin-right: 0.2em;
-
-  position: top;
+  max-width: auto;
   padding: 1em;
-  border-radius: 25px;
-  height: 8em;
+  position: relative;
+  position: top;
+
   h1 {
     color: #ffffff;
-    text-align: center;
     margin-top: 0;
     margin-bottom: 2px;
+    text-align: center;
   }
   ul {
-    display: flex;
     align-items: flex-end;
+    display: flex;
     justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   button {
-    color: #da2127;
     background-color: #da2127;
     border-radius: 20px;
     border-style: none;
+    color: #da2127;
     -webkit-box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
     -moz-box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
     box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);

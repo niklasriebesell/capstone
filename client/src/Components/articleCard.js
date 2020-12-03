@@ -15,14 +15,15 @@ function ArticleCard() {
 }
 
 const Article = styled.article`
+  border: 1px;
   border-color: #ffffff;
+  border-radius: 20px;
+  border-style: solid;
+  color: #ffffff;
   margin-top: 1em;
   margin-left: 0.2em;
   margin-right: 0.2em;
-  border: 1px;
-  border-radius: 20px;
-  color: #ffffff;
-  border-style: solid;
+
   text-align: center;
 
   h2 {

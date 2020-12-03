@@ -17,27 +17,28 @@ function Footerdown() {
 }
 
 const Footer = styled.footer`
-  display: flex;
-  position: fixed;
-  bottom: 1px;
   background-color: #da2127;
   border-radius: 25px;
+  bottom: 1px;
+  display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding: 0.5em 1em;
+  position: fixed;
   max-width: 100%;
+  padding: 0.5em 1em;
+  width: 100%;
 `
 
 const Button = styled.button`
-  display: flex;
   align-items: center;
-  padding: 0.5em 0.7em;
-  color: #ffffff;
   background-color: #041e42;
-  border-radius: 50px;
   border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  display: flex;
   font-size: 1.25em;
   line-height: 1.5;
+  padding: 0.5em 0.7em;
+
   svg {
     margin-right: 0.4em;
   }
