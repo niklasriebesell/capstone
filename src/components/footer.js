@@ -21,7 +21,7 @@ const Footer = styled.footer`
   position: fixed;
   bottom: 1px;
   background-color: #da2127;
-  border-radius: 10px;
+  border-radius: 25px;
   justify-content: space-between;
   width: 100%;
   padding: 0.5em 1em;

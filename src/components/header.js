@@ -64,6 +64,11 @@ const Header = styled.header`
   button {
     color: #da2127;
     background-color: #da2127;
+    border-radius: 20px;
+    border-style: none;
+    -webkit-box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
+    -moz-box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
+    box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
   }
 `
 
