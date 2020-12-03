@@ -9,20 +9,25 @@ function Headertop() {
   return (
     <Header>
       <h1>Injury-Report</h1>
-      {/*<button src={Brightness4Icon} width="50" alt="Darkmode-Icon"></button>
-      <button src={NFL} width="50" alt="NFL-Icon"></button>
-      <button src={MLB} width="50" alt="MLB-Icon"></button>
-      <button src={NBA} width="50" alt="NBA-Icon"></button>*/}
+      {/*<button>
+        <img src={Brightness4Icon} width="50" alt="Darkmode-Icon" />
+      </button>*/}
 
       <ul>
         <li>
-          <img src={NFL} width="50" alt="NFL-Icon" />
+          <button>
+            <img src={NFL} width="30" alt="NFL-Icon" />
+          </button>
         </li>
         <li>
-          <img src={MLB} width="60" alt="MLB-Icon" />
+          <button>
+            <img src={MLB} width="60" alt="MLB-Icon" />
+          </button>
         </li>
         <li>
-          <img src={NBA} width="30" alt="NBA-Icon" />
+          <button>
+            <img src={NBA} width="30" alt="NBA-Icon" />
+          </button>
         </li>
       </ul>
     </Header>
@@ -55,6 +60,15 @@ const Header = styled.header`
     list-style-type: none;
     margin: 0;
     padding: 0;
+  }
+  button {
+    color: #da2127;
+    background-color: #da2127;
+    border-radius: 20px;
+    border-style: none;
+    -webkit-box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
+    -moz-box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
+    box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
   }
 `
 
