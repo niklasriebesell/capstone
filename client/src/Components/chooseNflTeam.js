@@ -250,4 +250,9 @@ export default function NimmNflTeam() {
 
 const DivisonAFCEast = styled.div`
   display: flex;
+  flex-direction: column;
+
+  ul {
+    list-style-type: none;
+  }
 `

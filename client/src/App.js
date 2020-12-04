@@ -11,13 +11,16 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
+
       <Headertop />
       <InjuredPlayerCard />
       <ArticleCard />
       <ArticleCard />
       <ArticleCard />
       <ArticleCard />
+
       <NimmNflTeam />
+
       <Footerdown />
     </div>
   )
