@@ -77,6 +77,6 @@ const Header = styled.header`
   display: flex;
   position: fixed;
   justify-content: space-between;
-  list-style-type: none;*/
+  list-style-type: none;/*
 
 export default Headertop
