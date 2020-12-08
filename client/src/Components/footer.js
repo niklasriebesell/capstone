@@ -1,24 +1,29 @@
 import styled from 'styled-components/macro'
 import BackspaceIcon from '@material-ui/icons/Backspace'
 import HomeIcon from '@material-ui/icons/Home'
+import { Link } from 'react-router-dom'
 
 function Footerdown() {
   return (
     <Footer>
-      <Button width="50" alt="Back-Icon">
-        <BackspaceIcon />
-        Back
-      </Button>
-      <Button width="50" alt="Home-Icon">
-        <HomeIcon /> Home
-      </Button>
+      <div>
+        <Button width="50" alt="Back-Icon">
+          <BackspaceIcon />
+          Back
+        </Button>
+      </div>
+      <Link to="home">
+        <Button width="50" alt="Home-Icon">
+          <HomeIcon /> Home
+        </Button>
+      </Link>
     </Footer>
   )
 }
 
 const Footer = styled.footer`
   background-color: #da2127;
-  border-radius: 25px;
+  border-radius: 25px 25px 0px 0px;
   bottom: 1px;
   display: flex;
   justify-content: space-between;

@@ -1,8 +1,9 @@
 import styled from 'styled-components/macro'
-//import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import NFL from '../Assets/NFL.webp'
 import MLB from '../Assets/MLB.webp'
 import NBA from '../Assets/NBA.webp'
+//import ChooseNflTeam from './chooseNflTeam'
 //import Brightness4Icon from '@material-ui/icons/Brightness4'
 //import Brightness7Icon from '@material-ui/icons/Brightness7'
 
@@ -15,21 +16,21 @@ function Headertop() {
       </button>*/}
 
       <ul>
-        <li>
+        <Link to="/chooseNflTeam">
           <button>
             <img src={NFL} width="30" alt="NFL-Icon" />
           </button>
-        </li>
-        <li>
+        </Link>
+        <Link to="chooseMlbTeam">
           <button>
             <img src={MLB} width="60" alt="MLB-Icon" />
           </button>
-        </li>
-        <li>
+        </Link>
+        <Link to="chooseNbaTeam">
           <button>
             <img src={NBA} width="30" alt="NBA-Icon" />
           </button>
-        </li>
+        </Link>
       </ul>
     </Header>
   )
@@ -37,7 +38,7 @@ function Headertop() {
 
 const Header = styled.header`
   background-color: #da2127;
-  border-radius: 25px;
+  border-radius: 0px 0px 25px 25px;
   display: flex;
   flex-direction: column;
   height: 8em;
@@ -77,6 +78,6 @@ const Header = styled.header`
   display: flex;
   position: fixed;
   justify-content: space-between;
-  list-style-type: none;/*
+  list-style-type: none;*/
 
 export default Headertop

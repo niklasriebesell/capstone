@@ -35,7 +35,7 @@ import Tennesseetitans from '../Assets/tennesseetitans.webp'
 import Washingtonredskins from '../Assets/washingtonredskins.webp'
 import Seattleseahawks from '../Assets/seattleseahawks.webp'
 
-export default function NimmNflTeam() {
+export default function ChooseNflTeam() {
   return (
     <>
       <GlobalStyle />
@@ -47,7 +47,7 @@ export default function NimmNflTeam() {
         <h3>AFC East</h3>
         <ul>
           <li>
-            <img src={Buffalobills} width="50" alt="buffalobiils-Icon" />
+            <img src={Buffalobills} width="50" alt="buffalobills-Icon" />
           </li>
           <li>
             <img src={Miamidolphins} width="50" alt="miamidolphins-Icon" />
