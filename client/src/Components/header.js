@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import NFL from '../Assets/NFL.webp'
 import MLB from '../Assets/MLB.webp'
 import NBA from '../Assets/NBA.webp'
+import Dropdown from '../Components/dropdownmenu'
+
 //import ChooseNflTeam from './chooseNflTeam'
 //import Brightness4Icon from '@material-ui/icons/Brightness4'
 //import Brightness7Icon from '@material-ui/icons/Brightness7'
@@ -14,7 +16,7 @@ function Headertop() {
       {/*<button>
         <img src={Brightness4Icon} width="50" alt="Darkmode-Icon" />
       </button>*/}
-
+      <Dropdown />
       <ul>
         <Link to="/chooseNflTeam">
           <button>

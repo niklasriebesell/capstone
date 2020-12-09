@@ -19,13 +19,13 @@ async function getNflInjuryData() {
       'https://www.fantasyfootballnerd.com/service/injuries/json/tp3c7p5yrane'
     )
 
-    return result.data.Injuries.ARI
+    return result.data.Injuries
   } catch (error) {
     console.error(error.message)
   }
 }
 
-async function getNflInjuryData() {
+/*async function getNflInjuryData() {
   try {
     const result = await axios.get(
       'https://www.fantasyfootballnerd.com/service/injuries/json/tp3c7p5yrane'
@@ -35,6 +35,6 @@ async function getNflInjuryData() {
   } catch (error) {
     console.error(error.message)
   }
-}
+}*/
 
 app.listen(4000, () => console.log('server listen on port 4000'))
