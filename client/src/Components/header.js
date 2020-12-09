@@ -18,17 +18,17 @@ function Headertop() {
       <ul>
         <Link to="/chooseNflTeam">
           <button>
-            <img src={NFL} width="30" alt="NFL-Icon" />
+            <img src={NFL} width="20" alt="NFL-Icon" />
           </button>
         </Link>
         <Link to="chooseMlbTeam">
           <button>
-            <img src={MLB} width="60" alt="MLB-Icon" />
+            <img src={MLB} width="40" alt="MLB-Icon" />
           </button>
         </Link>
         <Link to="chooseNbaTeam">
           <button>
-            <img src={NBA} width="30" alt="NBA-Icon" />
+            <img src={NBA} width="20" alt="NBA-Icon" />
           </button>
         </Link>
       </ul>
@@ -41,9 +41,7 @@ const Header = styled.header`
   border-radius: 0px 0px 25px 25px;
   display: flex;
   flex-direction: column;
-  height: 8em;
-  margin-left: 0.2em;
-  margin-right: 0.2em;
+  height: 7em;
   max-width: auto;
   padding: 1em;
   position: relative;

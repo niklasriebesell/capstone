@@ -24,7 +24,7 @@ function Footerdown() {
 const Footer = styled.footer`
   background-color: #da2127;
   border-radius: 25px 25px 0px 0px;
-  bottom: 1px;
+  bottom: 0px;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -40,7 +40,7 @@ const Button = styled.button`
   border-radius: 50px;
   color: #ffffff;
   display: flex;
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 1.5;
   padding: 0.5em 0.7em;
 

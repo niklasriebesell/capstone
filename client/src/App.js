@@ -19,7 +19,7 @@ function App() {
           <Route path="/injuredPlayerCard" component={InjuredPlayerCard} />
           <Route path="/chooseNflTeam" component={ChooseNflTeam} />
           <Route path="/chooseMlbTeam" component={ChooseMlbTeam} />
-          <Route path="/chooseMlbTeam" component={ChooseNbaTeam} />
+          <Route path="/chooseNbaTeam" component={ChooseNbaTeam} />
           <Route path="/home" component={Landingpage} />
           <Landingpage />
           <ChooseNflTeam />
