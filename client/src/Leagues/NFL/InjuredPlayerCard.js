@@ -13,6 +13,10 @@ export default function InjuredPlayerCard() {
     []
   )
 
+  /*Object.keys(players).map((key) => {
+    const player = players[key];
+  })*/
+
   return (
     <>
       {players &&

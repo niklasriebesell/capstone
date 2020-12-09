@@ -25,4 +25,16 @@ async function getNflInjuryData() {
   }
 }
 
+async function getNflInjuryData() {
+  try {
+    const result = await axios.get(
+      'https://www.fantasyfootballnerd.com/service/injuries/json/tp3c7p5yrane'
+    )
+
+    return result.data.Injuries.GB
+  } catch (error) {
+    console.error(error.message)
+  }
+}
+
 app.listen(4000, () => console.log('server listen on port 4000'))

@@ -1,4 +1,5 @@
 import GlobalStyle from '../styles/globalstyle'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components/macro'
 import Headertop from './header'
 import Footerdown from './footer'
@@ -224,13 +225,15 @@ export default function ChooseNflTeam() {
       <div>
         <h3>NFC West</h3>
         <ul>
-          <li>
-            <img
-              src={Arizonacardinals}
-              width="50"
-              alt="arizonacardinals-Icon"
-            />
-          </li>
+          <nav>
+            <Link to="injuredPlayerCard">
+              <img
+                src={Arizonacardinals}
+                width="50"
+                alt="arizonacardinals-Icon"
+              />
+            </Link>
+          </nav>
           <li>
             <img src={Stlouisrams} width="50" alt="stlouisrams-Icon" />
           </li>

@@ -1,4 +1,5 @@
 /** @format */
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyle from './styles/globalstyle'
 //import Headertop from './Components/header'
 import Landingpage from './Components/landingpage'
@@ -7,20 +8,19 @@ import Landingpage from './Components/landingpage'
 import ChooseNflTeam from './Components/chooseNflTeam'
 import ChooseMlbTeam from './Components/chooseMlbTeam'
 import ChooseNbaTeam from './Components/chooseNbaTeam'
-
 import InjuredPlayerCard from './Leagues/NFL/InjuredPlayerCard'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-      <Router>
+    <Router>
+      <div>
         <GlobalStyle />
         <Switch>
+          <Route path="/injuredPlayerCard" component={InjuredPlayerCard} />
           <Route path="/chooseNflTeam" component={ChooseNflTeam} />
           <Route path="/chooseMlbTeam" component={ChooseMlbTeam} />
           <Route path="/chooseMlbTeam" component={ChooseNbaTeam} />
-          <Route path="home" component={Landingpage} />
+          <Route path="/home" component={Landingpage} />
           <Landingpage />
           <ChooseNflTeam />
           <ChooseMlbTeam />
@@ -31,8 +31,8 @@ function App() {
       <ArticleCard />
       <ArticleCard />*/}
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </Router>
   )
 }
 
