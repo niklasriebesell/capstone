@@ -1,5 +1,6 @@
 import GlobalStyle from '../styles/globalstyle'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import styled from 'styled-components/macro'
 import Headertop from './header'
 import Footerdown from './footer'
@@ -48,20 +49,32 @@ export default function ChooseNflTeam() {
         <h3>AFC East</h3>
         <ul>
           <li>
-            <img src={Buffalobills} width="50" alt="buffalobills-Icon" />
+            <LazyLoadImage
+              src={Buffalobills}
+              width="50"
+              alt="buffalobills-Icon"
+            />
           </li>
           <li>
-            <img src={Miamidolphins} width="50" alt="miamidolphins-Icon" />
+            <LazyLoadImage
+              src={Miamidolphins}
+              width="50"
+              alt="miamidolphins-Icon"
+            />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Newenglandpatriots}
               width="50"
               alt="newenglandpatriots-Icon"
             />
           </li>
           <li>
-            <img src={Newyorkjets} width="50" alt="newyorkjets-Icon" />
+            <LazyLoadImage
+              src={Newyorkjets}
+              width="50"
+              alt="newyorkjets-Icon"
+            />
           </li>
         </ul>
       </DivisonAFCEast>
@@ -70,20 +83,28 @@ export default function ChooseNflTeam() {
         <h3>AFC North</h3>
         <ul>
           <li>
-            <img src={Baltimoreravens} width="50" alt="baltimoreravens-Icon" />
+            <LazyLoadImage
+              src={Baltimoreravens}
+              width="50"
+              alt="baltimoreravens-Icon"
+            />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Cincinnatibengals}
               width="50"
               alt="cincinnatibengals-Icon"
             />
           </li>
           <li>
-            <img src={Clevelandbrowns} width="50" alt="clevelandbrowns-Icon" />
+            <LazyLoadImage
+              src={Clevelandbrowns}
+              width="50"
+              alt="clevelandbrowns-Icon"
+            />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Pittsburghsteelers}
               width="50"
               alt="pittsburghsteelers-Icon"
@@ -96,24 +117,32 @@ export default function ChooseNflTeam() {
         <h3>AFC South</h3>
         <ul>
           <li>
-            <img src={Houstontexans} width="50" alt="houstentexans-Icon" />
+            <LazyLoadImage
+              src={Houstontexans}
+              width="50"
+              alt="houstentexans-Icon"
+            />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Indianapoliscolts}
               width="50"
               alt="indianapoliscolts-Icon"
             />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Jacksonvillejaguars}
               width="50"
               alt="jacksonvillejaguars-Icon"
             />
           </li>
           <li>
-            <img src={Tennesseetitans} width="50" alt="tennesseetitans-Icon" />
+            <LazyLoadImage
+              src={Tennesseetitans}
+              width="50"
+              alt="tennesseetitans-Icon"
+            />
           </li>
         </ul>
       </div>
@@ -122,20 +151,28 @@ export default function ChooseNflTeam() {
         <h3>AFC West</h3>
         <ul>
           <li>
-            <img src={Denverbroncos} width="50" alt="denverbroncos-Icon" />
+            <LazyLoadImage
+              src={Denverbroncos}
+              width="50"
+              alt="denverbroncos-Icon"
+            />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Kansascitychiefs}
               width="50"
               alt="kansascitychiefs-Icon"
             />
           </li>
           <li>
-            <img src={Oaklandraiders} width="50" alt="oaklandraiders-Icon" />
+            <LazyLoadImage
+              src={Oaklandraiders}
+              width="50"
+              alt="oaklandraiders-Icon"
+            />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Sandieagochargers}
               width="50"
               alt="sandiegochargers-Icon"
@@ -148,24 +185,32 @@ export default function ChooseNflTeam() {
         <h3>NFC East</h3>
         <ul>
           <li>
-            <img src={Dallascowboys} width="50" alt="fallascowboys-Icon" />
+            <LazyLoadImage
+              src={Dallascowboys}
+              width="50"
+              alt="fallascowboys-Icon"
+            />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Philadelphiaeagles}
               width="50"
               alt="philadelphiaeagles-Icon"
             />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Washingtonredskins}
               width="50"
               alt="washingtonredskins-Icon"
             />
           </li>
           <li>
-            <img src={Newyorkgiants} width="50" alt="newyorkgiants-Icon" />
+            <LazyLoadImage
+              src={Newyorkgiants}
+              width="50"
+              alt="newyorkgiants-Icon"
+            />
           </li>
         </ul>
       </div>
@@ -174,16 +219,28 @@ export default function ChooseNflTeam() {
         <h3>NFC North</h3>
         <ul>
           <li>
-            <img src={Chicagobears} width="50" alt="chicagobears-Icon" />
+            <LazyLoadImage
+              src={Chicagobears}
+              width="50"
+              alt="chicagobears-Icon"
+            />
           </li>
           <li>
-            <img src={Detroitlions} width="50" alt="detroitlions-Icon" />
+            <LazyLoadImage
+              src={Detroitlions}
+              width="50"
+              alt="detroitlions-Icon"
+            />
           </li>
           <li>
-            <img src={Greenbaypackers} width="50" alt="greenbaypackers-Icon" />
+            <LazyLoadImage
+              src={Greenbaypackers}
+              width="50"
+              alt="greenbaypackers-Icon"
+            />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Minnesotavikings}
               width="50"
               alt="minnesotavikings-Icon"
@@ -196,24 +253,28 @@ export default function ChooseNflTeam() {
         <h3>NFC South</h3>
         <ul>
           <li>
-            <img src={Atlantafalcons} width="50" alt="atlantafalcons-Icon" />
+            <LazyLoadImage
+              src={Atlantafalcons}
+              width="50"
+              alt="atlantafalcons-Icon"
+            />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Carolinapanthers}
               width="50"
               alt="carolinapanthers-Icon"
             />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Neworleanssaints}
               width="50"
               alt="neworleanssaints-Icon"
             />
           </li>
           <li>
-            <img
+            <LazyLoadImage
               src={Tampabaybuccaneers}
               width="50"
               alt="tampabaybuccaneers-Icon"
@@ -227,7 +288,7 @@ export default function ChooseNflTeam() {
         <ul>
           <nav>
             <Link to="injuredPlayerCard">
-              <img
+              <LazyLoadImage
                 src={Arizonacardinals}
                 width="50"
                 alt="arizonacardinals-Icon"
@@ -235,13 +296,21 @@ export default function ChooseNflTeam() {
             </Link>
           </nav>
           <li>
-            <img src={Stlouisrams} width="50" alt="stlouisrams-Icon" />
+            <LazyLoadImage
+              src={Stlouisrams}
+              width="50"
+              alt="stlouisrams-Icon"
+            />
           </li>
           <li>
-            <img src={Sanfran} width="50" alt="sanfran-Icon" />
+            <LazyLoadImage src={Sanfran} width="50" alt="sanfran-Icon" />
           </li>
           <li>
-            <img src={Seattleseahawks} width="50" alt="seattleseahawks-Icon" />
+            <LazyLoadImage
+              src={Seattleseahawks}
+              width="50"
+              alt="seattleseahawks-Icon"
+            />
           </li>
         </ul>
       </div>
