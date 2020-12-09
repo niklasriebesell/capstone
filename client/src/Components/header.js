@@ -1,7 +1,9 @@
 import styled from 'styled-components/macro'
+import { Link } from 'react-router-dom'
 import NFL from '../Assets/NFL.webp'
 import MLB from '../Assets/MLB.webp'
 import NBA from '../Assets/NBA.webp'
+//import ChooseNflTeam from './chooseNflTeam'
 //import Brightness4Icon from '@material-ui/icons/Brightness4'
 //import Brightness7Icon from '@material-ui/icons/Brightness7'
 
@@ -14,58 +16,58 @@ function Headertop() {
       </button>*/}
 
       <ul>
-        <li>
+        <Link to="/chooseNflTeam">
           <button>
             <img src={NFL} width="30" alt="NFL-Icon" />
           </button>
-        </li>
-        <li>
+        </Link>
+        <Link to="chooseMlbTeam">
           <button>
             <img src={MLB} width="60" alt="MLB-Icon" />
           </button>
-        </li>
-        <li>
+        </Link>
+        <Link to="chooseNbaTeam">
           <button>
             <img src={NBA} width="30" alt="NBA-Icon" />
           </button>
-        </li>
+        </Link>
       </ul>
     </Header>
   )
 }
 
 const Header = styled.header`
+  background-color: #da2127;
+  border-radius: 0px 0px 25px 25px;
   display: flex;
   flex-direction: column;
-  background-color: #da2127;
-  position: relative;
-  max-width: auto;
+  height: 8em;
   margin-left: 0.2em;
   margin-right: 0.2em;
-
-  position: top;
+  max-width: auto;
   padding: 1em;
-  border-radius: 25px;
-  height: 8em;
+  position: relative;
+  position: top;
+
   h1 {
     color: #ffffff;
-    text-align: center;
     margin-top: 0;
     margin-bottom: 2px;
+    text-align: center;
   }
   ul {
-    display: flex;
     align-items: flex-end;
+    display: flex;
     justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   button {
-    color: #da2127;
     background-color: #da2127;
     border-radius: 20px;
     border-style: none;
+    color: #da2127;
     -webkit-box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
     -moz-box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
     box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);

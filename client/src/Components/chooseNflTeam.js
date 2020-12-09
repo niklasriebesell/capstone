@@ -1,51 +1,54 @@
-//import GlobalStyle from './styles/globalstylemacro'
+import GlobalStyle from '../styles/globalstyle'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components/macro'
 import Headertop from './header'
 import Footerdown from './footer'
-import Sanfran from '../Assets/sanfran.webp'
-import Arizonacardinals from '../Assets/arizonacardinals.webp'
-import Atlantafalcons from '../Assets/atlantafalcons.webp'
-import Baltimoreravens from '../Assets/baltimoreravens.webp'
-import Buffalobills from '../Assets/buffalobills.webp'
-import Carolinapanthers from '../Assets/carolinapanthers.webp'
-import Chicagobears from '../Assets/chicagobears.webp'
-import Cincinnatibengals from '../Assets/cincinnatibengals.webp'
-import Clevelandbrowns from '../Assets/clevelandbrowns.webp'
-import Dallascowboys from '../Assets/dallascowboys.webp'
-import Denverbroncos from '../Assets/denverbroncos.webp'
-import Detroitlions from '../Assets/detroitlions.webp'
-import Greenbaypackers from '../Assets/greenbaypackers.webp'
-import Houstontexans from '../Assets/houstontexans.webp'
-import Indianapoliscolts from '../Assets/indianapoliscolts.webp'
-import Jacksonvillejaguars from '../Assets/jacksonvillejaguars.webp'
-import Kansascitychiefs from '../Assets/kansascitychiefs.webp'
-import Miamidolphins from '../Assets/miamidolphins.webp'
-import Minnesotavikings from '../Assets/minnesotavikings.webp'
-import Newenglandpatriots from '../Assets/newenglandpatriots.webp'
-import Neworleanssaints from '../Assets/neworleanssaints.webp'
-import Newyorkgiants from '../Assets/newyorkgiants.webp'
-import Newyorkjets from '../Assets/newyorkjets.webp'
-import Oaklandraiders from '../Assets/oaklandraiders.webp'
-import Philadelphiaeagles from '../Assets/philadelphiaeagles.webp'
-import Pittsburghsteelers from '../Assets/pittsburghsteelers.webp'
-import Sandieagochargers from '../Assets/sandiegochargers.webp'
-import Stlouisrams from '../Assets/stlouisrams.webp'
-import Tampabaybuccaneers from '../Assets/tampabaybuccaneers.webp'
-import Tennesseetitans from '../Assets/tennesseetitans.webp'
-import Washingtonredskins from '../Assets/washingtonredskins.webp'
-import Seattleseahawks from '../Assets/seattleseahawks.webp'
+import Sanfran from '../Assets/Nfl/sanfran.webp'
+import Arizonacardinals from '../Assets/Nfl/arizonacardinals.webp'
+import Atlantafalcons from '../Assets/Nfl/atlantafalcons.webp'
+import Baltimoreravens from '../Assets/Nfl/baltimoreravens.webp'
+import Buffalobills from '../Assets/Nfl/buffalobills.webp'
+import Carolinapanthers from '../Assets/Nfl/carolinapanthers.webp'
+import Chicagobears from '../Assets/Nfl/chicagobears.webp'
+import Cincinnatibengals from '../Assets/Nfl/cincinnatibengals.webp'
+import Clevelandbrowns from '../Assets/Nfl/clevelandbrowns.webp'
+import Dallascowboys from '../Assets/Nfl/dallascowboys.webp'
+import Denverbroncos from '../Assets/Nfl/denverbroncos.webp'
+import Detroitlions from '../Assets/Nfl/detroitlions.webp'
+import Greenbaypackers from '../Assets/Nfl/greenbaypackers.webp'
+import Houstontexans from '../Assets/Nfl/houstontexans.webp'
+import Indianapoliscolts from '../Assets/Nfl/indianapoliscolts.webp'
+import Jacksonvillejaguars from '../Assets/Nfl/jacksonvillejaguars.webp'
+import Kansascitychiefs from '../Assets/Nfl/kansascitychiefs.webp'
+import Miamidolphins from '../Assets/Nfl/miamidolphins.webp'
+import Minnesotavikings from '../Assets/Nfl/minnesotavikings.webp'
+import Newenglandpatriots from '../Assets/Nfl/newenglandpatriots.webp'
+import Neworleanssaints from '../Assets/Nfl/neworleanssaints.webp'
+import Newyorkgiants from '../Assets/Nfl/newyorkgiants.webp'
+import Newyorkjets from '../Assets/Nfl/newyorkjets.webp'
+import Oaklandraiders from '../Assets/Nfl/oaklandraiders.webp'
+import Philadelphiaeagles from '../Assets/Nfl/philadelphiaeagles.webp'
+import Pittsburghsteelers from '../Assets/Nfl/pittsburghsteelers.webp'
+import Sandieagochargers from '../Assets/Nfl/sandiegochargers.webp'
+import Stlouisrams from '../Assets/Nfl/stlouisrams.webp'
+import Tampabaybuccaneers from '../Assets/Nfl/tampabaybuccaneers.webp'
+import Tennesseetitans from '../Assets/Nfl/tennesseetitans.webp'
+import Washingtonredskins from '../Assets/Nfl/washingtonredskins.webp'
+import Seattleseahawks from '../Assets/Nfl/seattleseahawks.webp'
 
-export default function NimmNflTeam() {
+export default function ChooseNflTeam() {
   return (
     <>
+      <GlobalStyle />
       <Headertop />
 
       <h2>Choose your Team</h2>
 
-      <div>
+      <DivisonAFCEast>
         <h3>AFC East</h3>
         <ul>
           <li>
-            <img src={Buffalobills} width="50" alt="buffalobiils-Icon" />
+            <img src={Buffalobills} width="50" alt="buffalobills-Icon" />
           </li>
           <li>
             <img src={Miamidolphins} width="50" alt="miamidolphins-Icon" />
@@ -61,7 +64,7 @@ export default function NimmNflTeam() {
             <img src={Newyorkjets} width="50" alt="newyorkjets-Icon" />
           </li>
         </ul>
-      </div>
+      </DivisonAFCEast>
 
       <div>
         <h3>AFC North</h3>
@@ -222,13 +225,15 @@ export default function NimmNflTeam() {
       <div>
         <h3>NFC West</h3>
         <ul>
-          <li>
-            <img
-              src={Arizonacardinals}
-              width="50"
-              alt="arizonacardinals-Icon"
-            />
-          </li>
+          <nav>
+            <Link to="injuredPlayerCard">
+              <img
+                src={Arizonacardinals}
+                width="50"
+                alt="arizonacardinals-Icon"
+              />
+            </Link>
+          </nav>
           <li>
             <img src={Stlouisrams} width="50" alt="stlouisrams-Icon" />
           </li>
@@ -245,3 +250,12 @@ export default function NimmNflTeam() {
     </>
   )
 }
+
+const DivisonAFCEast = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    list-style-type: none;
+  }
+`

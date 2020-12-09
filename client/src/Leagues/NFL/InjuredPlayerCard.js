@@ -13,19 +13,35 @@ export default function InjuredPlayerCard() {
     []
   )
 
+  /*Object.keys(players).map((key) => {
+    const player = players[key];
+  })*/
+
   return (
     <>
       {players &&
         players?.map((player, index) => (
-          <div key={index} style={{ color: 'white' }}>
-            <p>{player.playerName}</p>
-            <p>{player.team}</p>
-            <p>{player.position}</p>
-            <p>{player.injury}</p>
-            <p>{player.practiceStatus}</p>
-            <p>{player.gameStatus}</p>
-          </div>
+          <Div key={index} style={{ color: 'white' }}>
+            <p>Name:{player.playerName}</p>
+            <p>Team:{player.team}</p>
+            <p>Position:{player.position}</p>
+            <p>Injury:{player.injury}</p>
+            <p>Status:{player.gameStatus}</p>
+            <p>lastupdated:{player.lastUpdate}</p>
+          </Div>
         ))}
     </>
   )
 }
+
+const Div = styled.div`
+  border: 1px;
+  border-color: #ffffff;
+  border-radius: 20px;
+  border-style: solid;
+  color: #ffffff;
+  margin-top: 1em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  text-align: center;
+`
