@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import styled from 'styled-components/macro'
-import getNflInjuryData from '../../Api/fetchDataNfl'
+import getNflInjuryData from '../Api/fetchDataNfl'
+import Footer from '../Components/Footer'
+import Header from '../Components/Header'
 
-export default function InjuredPlayerCard() {
+export default function InjuredPlayerTeamPage() {
   const [teams, setTeams] = useState([])
   const [selectedTeam, setSelectedTeam] = useState('')
   const [players, setPlayers] = useState([])
@@ -23,12 +25,9 @@ export default function InjuredPlayerCard() {
     []
   )
 
-  /*Object.keys(teams).map((teamKey) => {
-    const players = teams[teamKey];
-  })*/
-
   return (
     <>
+      <Header />
       {teams &&
         teams.map((team) => (
           <button
@@ -55,6 +54,7 @@ export default function InjuredPlayerCard() {
               </Div>
             )
         )}
+      <Footer />
     </>
   )
 }

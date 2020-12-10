@@ -2,8 +2,8 @@ import GlobalStyle from '../styles/globalstyle'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import styled from 'styled-components/macro'
-import Headertop from './header'
-import Footerdown from './footer'
+import Headertop from '../Components/Header'
+import Footer from '../Components/Footer'
 import Sanfran from '../Assets/Nfl/sanfran.webp'
 import Arizonacardinals from '../Assets/Nfl/arizonacardinals.webp'
 import Atlantafalcons from '../Assets/Nfl/atlantafalcons.webp'
@@ -315,7 +315,7 @@ export default function ChooseNflTeam() {
         </ul>
       </div>
 
-      <Footerdown />
+      <Footer />
     </>
   )
 }

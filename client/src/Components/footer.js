@@ -3,25 +3,24 @@ import BackspaceIcon from '@material-ui/icons/Backspace'
 import HomeIcon from '@material-ui/icons/Home'
 import { Link } from 'react-router-dom'
 
-function Footerdown() {
+export default function Footer() {
   return (
-    <Footer>
-      <div>
-        <Button width="50" alt="Back-Icon">
-          <BackspaceIcon />
-          Back
-        </Button>
-      </div>
+    <StyledFooter>
       <Link to="home">
         <Button width="50" alt="Home-Icon">
           <HomeIcon /> Home
         </Button>
       </Link>
-    </Footer>
+      <Link to="team">
+        <Button width="50" alt="">
+          Team Injuries
+        </Button>
+      </Link>
+    </StyledFooter>
   )
 }
 
-const Footer = styled.footer`
+const StyledFooter = styled.footer`
   background-color: #da2127;
   border-radius: 25px 25px 0px 0px;
   bottom: 0px;
@@ -48,4 +47,3 @@ const Button = styled.button`
     margin-right: 0.4em;
   }
 `
-export default Footerdown

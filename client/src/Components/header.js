@@ -3,19 +3,12 @@ import { Link } from 'react-router-dom'
 import NFL from '../Assets/NFL.webp'
 import MLB from '../Assets/MLB.webp'
 import NBA from '../Assets/NBA.webp'
-import Dropdown from '../Components/dropdownmenu'
+import Dropdown from './dropdownmenu'
 
-//import ChooseNflTeam from './chooseNflTeam'
-//import Brightness4Icon from '@material-ui/icons/Brightness4'
-//import Brightness7Icon from '@material-ui/icons/Brightness7'
-
-function Headertop() {
+export default function Header() {
   return (
-    <Header>
+    <StyledHeader>
       <h1>Injury-Report</h1>
-      {/*<button>
-        <img src={Brightness4Icon} width="50" alt="Darkmode-Icon" />
-      </button>*/}
       <Dropdown />
       <ul>
         <Link to="/chooseNflTeam">
@@ -34,11 +27,11 @@ function Headertop() {
           </button>
         </Link>
       </ul>
-    </Header>
+    </StyledHeader>
   )
 }
 
-const Header = styled.header`
+const StyledHeader = styled.header`
   background-color: #da2127;
   border-radius: 0px 0px 25px 25px;
   display: flex;
@@ -73,11 +66,3 @@ const Header = styled.header`
     box-shadow: 10px 15px 30px 0px rgba(0, 58, 115, 0.9);
   }
 `
-
-/*const Ul = styled.ul`
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  list-style-type: none;*/
-
-export default Headertop
