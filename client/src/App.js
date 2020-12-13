@@ -11,6 +11,7 @@ function App() {
     <Router>
       <div>
         <GlobalStyle />
+        <Landingpage />
         <Switch>
           <Route path="/team" component={InjuredPlayerTeamPage} />
           <Route path="/chooseNflTeam" component={ChooseNflTeam} />

@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro'
-import BackspaceIcon from '@material-ui/icons/Backspace'
 import HomeIcon from '@material-ui/icons/Home'
 import { Link } from 'react-router-dom'
 

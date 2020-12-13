@@ -10,7 +10,12 @@ app.get('/api/nfl', async (request, response) => {
   console.log(injurydata)
   response.json(injurydata)
 })
-app.get('/api/mlb', (request, response) => response.json('mlb'))
+app.get('/api/mlb', async (request, response) => {
+  const injurydata = await getMlbInjuryData()
+  console.log(injurydata)
+  response.json(injurydata)
+})
+
 app.get('/api/nba', (request, response) => response.json('nba'))
 
 async function getNflInjuryData() {
@@ -19,22 +24,17 @@ async function getNflInjuryData() {
       'https://www.fantasyfootballnerd.com/service/injuries/json/tp3c7p5yrane'
     )
 
+    async function getMlbInjuryData() {
+      try {
+        const result = await axios.get(
+          'https://fantasybaseballnerd.com/service/injuries/'
+        )
     return result.data.Injuries
   } catch (error) {
     console.error(error.message)
   }
 }
 
-/*async function getNflInjuryData() {
-  try {
-    const result = await axios.get(
-      'https://www.fantasyfootballnerd.com/service/injuries/json/tp3c7p5yrane'
-    )
 
-    return result.data.Injuries.GB
-  } catch (error) {
-    console.error(error.message)
-  }
-}*/
 
 app.listen(4000, () => console.log('server listen on port 4000'))
