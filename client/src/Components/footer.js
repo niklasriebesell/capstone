@@ -10,9 +10,9 @@ export default function Footer() {
           <HomeIcon /> Home
         </Button>
       </Link>
-      <Link to="/team">
+      <Link to="/InjuryList">
         <Button width="50" alt="">
-          Team Injuries
+          Injury Dictionary
         </Button>
       </Link>
     </StyledFooter>

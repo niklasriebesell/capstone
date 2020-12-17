@@ -77,8 +77,11 @@ const Div = styled.div`
 `
 
 const TeamsButton = styled.button`
-  padding: 0.5em;
+  padding: 0.55em;
   margin-left: 0.2em;
-  margin-top: 0.3em;
+  margin-top: 0.5em;
   border-radius: 10px;
+  background-color: #003a73;
+  border-color: #ffffff;
+  color: #ffffff;
 `

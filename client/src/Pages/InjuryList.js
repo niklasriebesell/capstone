@@ -190,6 +190,7 @@ const Article = styled.article`
   margin-top: 1em;
   margin-left: 0.2em;
   margin-right: 0.2em;
+  margin-bottom: 0.2em;
 
   text-align: center;
 

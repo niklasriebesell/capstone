@@ -32,6 +32,7 @@ import tampabayrays from '../Assets/Mlb/tampabayrays.svg'
 import texasrangers from '../Assets/Mlb/texasrangers.svg'
 import torontobluejays from '../Assets/Mlb/torontobluejays.svg'
 import washingtonnationals from '../Assets/Mlb/washingtonnationals.svg'
+import sanfrangiants from '../Assets/Mlb/sanfranciscogiants.svg'
 
 export default function ChooseMlbTeam() {
   return (
@@ -42,32 +43,39 @@ export default function ChooseMlbTeam() {
       <h2>Choose your Team</h2>
 
       <TeamLogos>
-        <h3>AFC East</h3>
+        <h3>East</h3>
         <ul>
           <li>
             <LazyLoadImage
-              src={arizonadiamondbacks}
+              src={baltimoreorioles}
               width="100"
               alt="buffalobills-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={atlantabraves}
+              src={bostenredsox}
               width="100"
               alt="miamidolphins-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={baltimoreorioles}
+              src={newyorkyankees}
               width="100"
               alt="newenglandpatriots-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={bostenredsox}
+              src={tampabayrays}
+              width="100"
+              alt="newyorkjets-Icon"
+            />
+          </li>
+          <li>
+            <LazyLoadImage
+              src={torontobluejays}
               width="100"
               alt="newyorkjets-Icon"
             />
@@ -76,100 +84,121 @@ export default function ChooseMlbTeam() {
       </TeamLogos>
 
       <TeamLogos>
-        <h3>AFC North</h3>
+        <h3>Central</h3>
         <ul>
           <li>
             <LazyLoadImage
-              src={chicagocubs}
+              src={chicagowhitesox}
               width="100"
               alt="baltimoreravens-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={chicagowhitesox}
+              src={clevelandindians}
               width="100"
               alt="cincinnatibengals-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={clevelandindians}
+              src={detroittigers}
               width="100"
               alt="clevelandbrowns-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={coloradorockies}
+              src={kansascityroyals}
               width="100"
               alt="pittsburghsteelers-Icon"
+            />
+          </li>
+          <li>
+            <LazyLoadImage
+              src={minnesitatwins}
+              width="100"
+              alt="newyorkjets-Icon"
             />
           </li>
         </ul>
       </TeamLogos>
 
       <TeamLogos>
-        <h3>AFC South</h3>
+        <h3>West</h3>
         <ul>
           <li>
             <LazyLoadImage
-              src={cincinnatireds}
+              src={houstonastros}
               width="100"
               alt="houstentexans-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={detroittigers}
+              src={laangels}
               width="100"
               alt="indianapoliscolts-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={houstonastros}
+              src={oaklandathletics}
               width="100"
               alt="jacksonvillejaguars-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={kansascityroyals}
+              src={seattlemariners}
               width="100"
               alt="tennesseetitans-Icon"
             />
           </li>
+          <li>
+            <LazyLoadImage
+              src={texasrangers}
+              width="100"
+              alt="newyorkjets-Icon"
+            />
+          </li>
         </ul>
       </TeamLogos>
-
+      <h2>National League</h2>
       <TeamLogos>
-        <h3>AFC West</h3>
+        <h3>East</h3>
         <ul>
           <li>
             <LazyLoadImage
-              src={laangels}
+              src={atlantabraves}
               width="100"
               alt="denverbroncos-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={losangelsdodgers}
+              src={miamimarlins}
               width="100"
               alt="kansascitychiefs-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={miamimarlins}
+              src={newyorkmets}
               width="100"
               alt="oaklandraiders-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={milwaukeebrewers}
+              src={philadelphiaphillies}
+              width="100"
+              alt="sandiegochargers-Icon"
+            />
+          </li>
+          <li>
+            <LazyLoadImage
+              src={washingtonnationals}
               width="100"
               alt="sandiegochargers-Icon"
             />
@@ -178,119 +207,84 @@ export default function ChooseMlbTeam() {
       </TeamLogos>
 
       <TeamLogos>
-        <h3>NFC East</h3>
+        <h3>Central</h3>
         <ul>
           <li>
             <LazyLoadImage
-              src={minnesitatwins}
+              src={chicagocubs}
               width="100"
               alt="fallascowboys-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={newyorkmets}
+              src={cincinnatireds}
               width="100"
               alt="philadelphiaeagles-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={newyorkyankees}
+              src={milwaukeebrewers}
               width="100"
               alt="washingtonredskins-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={oaklandathletics}
+              src={pittsburghpirates}
               width="100"
               alt="newyorkgiants-Icon"
+            />
+          </li>
+          <li>
+            <LazyLoadImage
+              src={stlouiscardinals}
+              width="100"
+              alt="sandiegochargers-Icon"
             />
           </li>
         </ul>
       </TeamLogos>
 
       <TeamLogos>
-        <h3>NFC North</h3>
+        <h3>West</h3>
         <ul>
           <li>
             <LazyLoadImage
-              src={philadelphiaphillies}
+              src={arizonadiamondbacks}
               width="100"
               alt="chicagobears-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={pittsburghpirates}
+              src={coloradorockies}
               width="100"
               alt="detroitlions-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={sandiegopadres}
+              src={losangelsdodgers}
               width="100"
               alt="greenbaypackers-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
-              src={seattlemariners}
+              src={sandiegopadres}
               width="100"
               alt="minnesotavikings-Icon"
             />
           </li>
-        </ul>
-      </TeamLogos>
-
-      <TeamLogos>
-        <h3>NFC South</h3>
-        <ul>
           <li>
             <LazyLoadImage
-              src={stlouiscardinals}
+              src={sanfrangiants}
               width="100"
-              alt="atlantafalcons-Icon"
+              alt="sandiegochargers-Icon"
             />
           </li>
-          <li>
-            <LazyLoadImage
-              src={tampabayrays}
-              width="100"
-              alt="carolinapanthers-Icon"
-            />
-          </li>
-          <li>
-            <LazyLoadImage
-              src={texasrangers}
-              width="100"
-              alt="neworleanssaints-Icon"
-            />
-          </li>
-          <li>
-            <LazyLoadImage
-              src={torontobluejays}
-              width="100"
-              alt="tampabaybuccaneers-Icon"
-            />
-          </li>
-        </ul>
-      </TeamLogos>
-
-      <TeamLogos>
-        <h3>NFC West</h3>
-        <ul>
-          <nav>
-            <li>
-              <LazyLoadImage
-                src={washingtonnationals}
-                width="100"
-                alt="arizonacardinals-Icon"
-              />
-            </li>
-          </nav>
         </ul>
       </TeamLogos>
 
