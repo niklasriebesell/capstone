@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom'
 import NFL from '../Assets/NFL.webp'
 import MLB from '../Assets/MLB.webp'
 import NBA from '../Assets/NBA.webp'
-//import Dropdown from './dropdownmenu'
+//import ModernNav from './ModernNav'
 
 export default function Header() {
   return (
     <StyledHeader>
+      {/*<ModernNav />*/}
       <h1>Injury-Report</h1>
       <ul>
         <Link to="/chooseNflTeam">

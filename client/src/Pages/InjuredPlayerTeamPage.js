@@ -1,13 +1,18 @@
 import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import styled from 'styled-components/macro'
 import getNflInjuryData from '../Api/fetchDataNfl'
 import Footer from '../Components/Footer'
 import Header from '../Components/Header'
 
 export default function InjuredPlayerTeamPage() {
+  const { preSelectedTeam } = useParams()
   const [teams, setTeams] = useState([])
-  const [selectedTeam, setSelectedTeam] = useState('')
+  const [selectedTeam, setSelectedTeam] = useState(
+    preSelectedTeam ? preSelectedTeam : ''
+  )
   const [players, setPlayers] = useState([])
+  console.log(preSelectedTeam)
 
   useEffect(
     () =>
@@ -30,13 +35,13 @@ export default function InjuredPlayerTeamPage() {
       <Header />
       {teams &&
         teams.map((team) => (
-          <button
+          <TeamsButton
             type="button"
             key={team}
             onClick={() => setSelectedTeam(team)}
           >
             {team}
-          </button>
+          </TeamsButton>
         ))}
       {players &&
         players?.map(
@@ -69,4 +74,11 @@ const Div = styled.div`
   margin-left: 0.2em;
   margin-right: 0.2em;
   text-align: center;
+`
+
+const TeamsButton = styled.button`
+  padding: 0.5em;
+  margin-left: 0.2em;
+  margin-top: 0.3em;
+  border-radius: 10px;
 `

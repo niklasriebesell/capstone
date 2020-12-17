@@ -45,252 +45,254 @@ export default function ChooseNflTeam() {
 
       <h2>Choose your Team</h2>
 
-      <DivisonAFCEast>
+      <TeamLogos>
         <h3>AFC East</h3>
         <ul>
           <li>
-            <LazyLoadImage
-              src={Buffalobills}
-              width="50"
-              alt="buffalobills-Icon"
-            />
+            <Link to="/team/BAL">
+              <LazyLoadImage
+                src={Buffalobills}
+                width="100"
+                alt="buffalobills-Icon"
+              />
+            </Link>
           </li>
           <li>
             <LazyLoadImage
               src={Miamidolphins}
-              width="50"
+              width="100"
               alt="miamidolphins-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Newenglandpatriots}
-              width="50"
+              width="100"
               alt="newenglandpatriots-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Newyorkjets}
-              width="50"
+              width="100"
               alt="newyorkjets-Icon"
             />
           </li>
         </ul>
-      </DivisonAFCEast>
+      </TeamLogos>
 
-      <div>
+      <TeamLogos>
         <h3>AFC North</h3>
         <ul>
           <li>
             <LazyLoadImage
               src={Baltimoreravens}
-              width="50"
+              width="100"
               alt="baltimoreravens-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Cincinnatibengals}
-              width="50"
+              width="100"
               alt="cincinnatibengals-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Clevelandbrowns}
-              width="50"
+              width="100"
               alt="clevelandbrowns-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Pittsburghsteelers}
-              width="50"
+              width="100"
               alt="pittsburghsteelers-Icon"
             />
           </li>
         </ul>
-      </div>
+      </TeamLogos>
 
-      <div>
+      <TeamLogos>
         <h3>AFC South</h3>
         <ul>
           <li>
             <LazyLoadImage
               src={Houstontexans}
-              width="50"
+              width="100"
               alt="houstentexans-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Indianapoliscolts}
-              width="50"
+              width="100"
               alt="indianapoliscolts-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Jacksonvillejaguars}
-              width="50"
+              width="100"
               alt="jacksonvillejaguars-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Tennesseetitans}
-              width="50"
+              width="100"
               alt="tennesseetitans-Icon"
             />
           </li>
         </ul>
-      </div>
+      </TeamLogos>
 
-      <div>
+      <TeamLogos>
         <h3>AFC West</h3>
         <ul>
           <li>
             <LazyLoadImage
               src={Denverbroncos}
-              width="50"
+              width="100"
               alt="denverbroncos-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Kansascitychiefs}
-              width="50"
+              width="100"
               alt="kansascitychiefs-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Oaklandraiders}
-              width="50"
+              width="100"
               alt="oaklandraiders-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Sandieagochargers}
-              width="50"
+              width="100"
               alt="sandiegochargers-Icon"
             />
           </li>
         </ul>
-      </div>
+      </TeamLogos>
 
-      <div>
+      <TeamLogos>
         <h3>NFC East</h3>
         <ul>
           <li>
             <LazyLoadImage
               src={Dallascowboys}
-              width="50"
+              width="100"
               alt="fallascowboys-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Philadelphiaeagles}
-              width="50"
+              width="100"
               alt="philadelphiaeagles-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Washingtonredskins}
-              width="50"
+              width="100"
               alt="washingtonredskins-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Newyorkgiants}
-              width="50"
+              width="100"
               alt="newyorkgiants-Icon"
             />
           </li>
         </ul>
-      </div>
+      </TeamLogos>
 
-      <div>
+      <TeamLogos>
         <h3>NFC North</h3>
         <ul>
           <li>
             <LazyLoadImage
               src={Chicagobears}
-              width="50"
+              width="100"
               alt="chicagobears-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Detroitlions}
-              width="50"
+              width="100"
               alt="detroitlions-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Greenbaypackers}
-              width="50"
+              width="100"
               alt="greenbaypackers-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Minnesotavikings}
-              width="50"
+              width="100"
               alt="minnesotavikings-Icon"
             />
           </li>
         </ul>
-      </div>
+      </TeamLogos>
 
-      <div>
+      <TeamLogos>
         <h3>NFC South</h3>
         <ul>
           <li>
             <LazyLoadImage
               src={Atlantafalcons}
-              width="50"
+              width="100"
               alt="atlantafalcons-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Carolinapanthers}
-              width="50"
+              width="100"
               alt="carolinapanthers-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Neworleanssaints}
-              width="50"
+              width="100"
               alt="neworleanssaints-Icon"
             />
           </li>
           <li>
             <LazyLoadImage
               src={Tampabaybuccaneers}
-              width="50"
+              width="100"
               alt="tampabaybuccaneers-Icon"
             />
           </li>
         </ul>
-      </div>
+      </TeamLogos>
 
-      <div>
+      <TeamLogos>
         <h3>NFC West</h3>
         <ul>
           <nav>
             <Link to="injuredPlayerCard">
               <LazyLoadImage
                 src={Arizonacardinals}
-                width="50"
+                width="100"
                 alt="arizonacardinals-Icon"
               />
             </Link>
@@ -298,33 +300,43 @@ export default function ChooseNflTeam() {
           <li>
             <LazyLoadImage
               src={Stlouisrams}
-              width="50"
+              width="100"
               alt="stlouisrams-Icon"
             />
           </li>
           <li>
-            <LazyLoadImage src={Sanfran} width="50" alt="sanfran-Icon" />
+            <LazyLoadImage src={Sanfran} width="100" alt="sanfran-Icon" />
           </li>
           <li>
             <LazyLoadImage
               src={Seattleseahawks}
-              width="50"
+              width="100"
               alt="seattleseahawks-Icon"
             />
           </li>
         </ul>
-      </div>
+      </TeamLogos>
 
       <Footer />
     </>
   )
 }
 
-const DivisonAFCEast = styled.div`
+const TeamLogos = styled.div`
   display: flex;
   flex-direction: column;
 
+  h3 {
+    color: white;
+    margin-left: 1em;
+  }
+
   ul {
     list-style-type: none;
+    li {
+      display: inline;
+      padding: 1em 1em;
+      width: 50%;
+    }
   }
 `
