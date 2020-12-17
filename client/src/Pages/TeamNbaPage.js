@@ -287,6 +287,7 @@ export default function ChooseMlbTeam() {
 const TeamLogos = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 3em;
 
   h2 {
     color: white;
