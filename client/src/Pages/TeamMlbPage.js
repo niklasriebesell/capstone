@@ -302,6 +302,12 @@ const TeamLogos = styled.div`
     margin-left: 1em;
   }
 
+  h2 {
+    color: white;
+    margin-left: 1em;
+    position: center;
+  }
+
   ul {
     list-style-type: none;
     li {

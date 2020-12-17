@@ -328,7 +328,7 @@ const TeamLogos = styled.div`
 
   h3 {
     color: white;
-    margin-left: 1em;
+    margin-left: 35%;
   }
 
   ul {

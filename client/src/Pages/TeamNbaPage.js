@@ -279,6 +279,7 @@ export default function ChooseMlbTeam() {
           </li>
         </ul>
       </TeamLogos>
+      <Footer />
     </>
   )
 }
