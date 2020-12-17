@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
   return (
     <StyledFooter>
-      <Link to="home">
+      <Link to="/">
         <Button width="50" alt="Home-Icon">
           <HomeIcon /> Home
         </Button>
       </Link>
-      <Link to="team">
+      <Link to="/team">
         <Button width="50" alt="">
           Team Injuries
         </Button>
@@ -29,6 +29,7 @@ const StyledFooter = styled.footer`
   max-width: 100%;
   padding: 0.5em 1em;
   width: 100%;
+  margin-top: 1em;
 `
 
 const Button = styled.button`
